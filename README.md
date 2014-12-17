@@ -7,5 +7,5 @@ Chess using only html,css,javascript.
 ## Demo
 ![Demo](/demo.png)
   [Demo](http://web.sfc.keio.ac.jp/~t13208to/ltp_final/)
-## Bug
-chess.js work well only on Firefox..
+## Bugs
+chess.js work well only on Firefox.
