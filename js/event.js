@@ -11,11 +11,11 @@ function resign () {
 	var resign = confirm("投了しますか？");
 	if (resign == true) {
 		if (turnCounter%2==1) {
-			$("#turn").html("<span class='whiteWin'>Winner: &#9813;White</span>");
+			$("#turn").html("<span class='whiteWin'>Winner: <span class='chess_pieces'>A</span>White</span>");
 			alert("白の勝ちです");
 			endFlag = 1;
 		}else{
-			$("#turn").html("<span class='blackWin'>Winner: &#9819;Black</span>");
+			$("#turn").html("<span class='blackWin'>Winner: <span class='chess_pieces'>a</span>Black</span>");
 			alert("黒の勝ちです");
 			endFlag = 1;
 		}
@@ -76,8 +76,8 @@ function queenSideCastling (){
 		}else{
 			$("#td101").empty();
 			$("#td105").empty();
-			$("#td103").html("<a href='#' class='king black'>&#9818;</a>");
-			$("#td104").html("<a href='#' class='rook black'>&#9820;</a>");
+			$("#td103").html("<a href='#' class='king black'><span class='chess_pieces'>a</span></a>");
+			$("#td104").html("<a href='#' class='rook black'><span class='chess_pieces'>e</span></a>");
 			castlingBlack = 1;
 			turnChange ();
 		}
@@ -92,8 +92,8 @@ function queenSideCastling (){
 		}else{
 			$("#td801").empty();
 			$("#td805").empty();
-			$("#td803").html("<a href='#' class='king white'>&#9812;</a>");
-			$("#td804").html("<a href='#' class='rook white'>&#9814;</a>");
+			$("#td803").html("<a href='#' class='king white'><span class='chess_pieces'>A</span></a>");
+			$("#td804").html("<a href='#' class='rook white'><span class='chess_pieces'>e</span></a>");
 			castlingWhite = 1;
 			turnChange ();
 		}
@@ -113,8 +113,8 @@ function kingSideCastling () {
 		}else{
 			$("#td105").empty();
 			$("#td108").empty();
-			$("#td107").html("<a href='#' class='king black'>&#9818;</a>");
-			$("#td106").html("<a href='#' class='rook black'>&#9820;</a>");
+			$("#td107").html("<a href='#' class='king black'><span class='chess_pieces'>a</span></a>");
+			$("#td106").html("<a href='#' class='rook black'><span class='chess_pieces'>e</span></a>");
 			castlingBlack = 1;
 			turnChange ();
 		}
@@ -129,21 +129,21 @@ function kingSideCastling () {
 		}else{
 			$("#td805").empty();
 			$("#td808").empty();
-			$("#td807").html("<a href='#' class='king white'>&#9812;</a>");
-			$("#td806").html("<a href='#' class='rook white'>&#9814;</a>");
+			$("#td807").html("<a href='#' class='king white'><span class='chess_pieces'>A</span></a>");
+			$("#td806").html("<a href='#' class='rook white'><span class='chess_pieces'>E</span></a>");
 			castlingWhite = 1;
 			turnChange ();
 		}
 	}
 }
 
-function turnChange () {
+function turnChange () {//キャスリングの後にターン変更
 	moveableId = [];
 	turnCounter++;
 	if (turnCounter%2==0) {
-		$("#turn").html("<span class='whiteTurn'>&#9812; White Moves</span>");
+		$("#turn").html("<span class='whiteTurn'><span class='chess_pieces'>A</span> White Moves</span>");
 	}else{
-		$("#turn").html("<span class='blackTurn'>&#9818; Black Moves</span>");
+		$("#turn").html("<span class='blackTurn'><span class='chess_pieces'>a</span> Black Moves</span>");
 	}
 	//チェック判定
 	checkWhite = 0;

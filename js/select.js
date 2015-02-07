@@ -101,11 +101,11 @@ $(function(){
 						//勝ち負け判定
 						if (loseFlag) {
 							if (turnCounter%2==0) {
-								$("#turn").html("<span class='whiteWin'>Winner: &#9813;White</span>");
+								$("#turn").html("<span class='whiteWin'>Winner: <span class='chess_pieces'>A</span>White</span>");
 								alert("白の勝ちです");
 								endFlag = 1;
 							}else{
-								$("#turn").html("<span class='blackWin'>Winner: &#9819;Black</span>");
+								$("#turn").html("<span class='blackWin'>Winner: <span class='chess_pieces'>a</span>Black</span>");
 								alert("黒の勝ちです");
 								endFlag = 1;
 							}
@@ -122,9 +122,9 @@ $(function(){
 						if(loseFlag!=1){
 							//ターン表示
 							if (turnCounter%2==0) {
-								$("#turn").html("<span class='whiteTurn'>&#9812; White Moves</span>");
+								$("#turn").html("<span class='whiteTurn'><span class='chess_pieces'>A</span> White Moves</span>");
 							}else{
-								$("#turn").html("<span class='blackTurn'>&#9818; Black Moves</span>");
+								$("#turn").html("<span class='blackTurn'><span class='chess_pieces'>a</span> Black Moves</span>");
 							}
 							//チェック判定
 							checkWhite = 0;

@@ -2,6 +2,11 @@ body{
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
+@font-face {
+  font-family: KsChessPieces;
+  src: url(../fonts/KsChessPieces.ttf) format('truetype');
+}
+
 h1{
 	margin-left: 20px;
 	margin-top: 15px;
@@ -51,6 +56,11 @@ p .castlingText{
 	-moz-box-shadow:inset 0 0 10px rgba(0,0,0,.4);
 	-webkit-box-shadow:inset 0 0 10px rgba(0,0,0,.4);
 }
+
+#chess_board tr td a, .chess_pieces{
+	font-family: 'KsChessPieces';
+}
+
 
 #chess_board .selected{
 	background:#ff99ff !important;

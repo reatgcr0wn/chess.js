@@ -25,10 +25,10 @@
 <h2>Promotion</h2>
 <p>プロモーションする駒を選択してください</p>
 	<div>
-		<div><a id="queenSelection" href="#" class="promotion" onclick="queenPromote()">&#9813;Queen</a></div>
-		<div><a id="knightSelection" href="#" class="promotion" onclick="knightPromote()">&#9816;Knight</a></div>
-		<div><a id="bishopSelection" href="#" class="promotion" onclick="bishopPromote()">&#9815;Bishop</a></div>
-		<div><a id="rookSelection" href="#" class="promotion" onclick="rookPromote()">&#9814;Rook</a></div>
+		<div><a id="queenSelection" href="#" class="promotion" onclick="queenPromote()"><span class='chess_pieces'>B</span>Queen</a></div>
+		<div><a id="knightSelection" href="#" class="promotion" onclick="knightPromote()"><span class='chess_pieces'>D</span>Knight</a></div>
+		<div><a id="bishopSelection" href="#" class="promotion" onclick="bishopPromote()"><span class='chess_pieces'>C</span>Bishop</a></div>
+		<div><a id="rookSelection" href="#" class="promotion" onclick="rookPromote()"><span class='chess_pieces'>E</span>Rook</a></div>
 	</div>
 </div>
 <div id="dialogtext" style="display: none;">
@@ -38,24 +38,24 @@
 
 <table id="chess_board" cellpadding="0" cellspacing="0">
 	<tr id="tr1">
-		<td id="td101"><a href="#" class="rook black">&#9820;</a></td>
-		<td id="td102"><a href="#" class="knight black">&#9822;</a></td>
-		<td id="td103"><a href="#" class="bishop black">&#9821;</a></td>
-		<td id="td104"><a href="#" class="queen black">&#9819;</a></td>
-		<td id="td105"><a href="#" class="king black">&#9818;</a></td>
-		<td id="td106"><a href="#" class="bishop black">&#9821;</a></td>
-		<td id="td107"><a href="#" class="knight black">&#9822;</a></td>
-		<td id="td108"><a href="#" class="rook black">&#9820;</a></td>
+		<td id="td101"><a href="#" class="rook black">e</a></td>
+		<td id="td102"><a href="#" class="knight black">d</a></td>
+		<td id="td103"><a href="#" class="bishop black">c</a></td>
+		<td id="td104"><a href="#" class="queen black">b</a></td>
+		<td id="td105"><a href="#" class="king black">a</a></td>
+		<td id="td106"><a href="#" class="bishop black">c</a></td>
+		<td id="td107"><a href="#" class="knight black">d</a></td>
+		<td id="td108"><a href="#" class="rook black">e</a></td>
 	</tr>
 	<tr>
-		<td id="td201"><a href="#" class="pawn black">&#9823;</a></td>
-		<td id="td202"><a href="#" class="pawn black">&#9823;</a></td>
-		<td id="td203"><a href="#" class="pawn black">&#9823;</a></td>
-		<td id="td204"><a href="#" class="pawn black">&#9823;</a></td>
-		<td id="td205"><a href="#" class="pawn black">&#9823;</a></td>
-		<td id="td206"><a href="#" class="pawn black">&#9823;</a></td>
-		<td id="td207"><a href="#" class="pawn black">&#9823;</a></td>
-		<td id="td208"><a href="#" class="pawn black">&#9823;</a></td>
+		<td id="td201"><a href="#" class="pawn black">f</a></td>
+		<td id="td202"><a href="#" class="pawn black">f</a></td>
+		<td id="td203"><a href="#" class="pawn black">f</a></td>
+		<td id="td204"><a href="#" class="pawn black">f</a></td>
+		<td id="td205"><a href="#" class="pawn black">f</a></td>
+		<td id="td206"><a href="#" class="pawn black">f</a></td>
+		<td id="td207"><a href="#" class="pawn black">f</a></td>
+		<td id="td208"><a href="#" class="pawn black">f</a></td>
 	</tr>
 	<tr>
 		<td id="td301"></td>
@@ -98,32 +98,32 @@
 		<td id="td608"></td>
 	</tr>
 	<tr>
-		<td id="td701"><a href="#" class="pawn white">&#9817;</a></td>
-		<td id="td702"><a href="#" class="pawn white">&#9817;</a></td>
-		<td id="td703"><a href="#" class="pawn white">&#9817;</a></td>
-		<td id="td704"><a href="#" class="pawn white">&#9817;</a></td>
-		<td id="td705"><a href="#" class="pawn white">&#9817;</a></td>
-		<td id="td706"><a href="#" class="pawn white">&#9817;</a></td>
-		<td id="td707"><a href="#" class="pawn white">&#9817;</a></td>
-		<td id="td708"><a href="#" class="pawn white">&#9817;</a></td>
+		<td id="td701"><a href="#" class="pawn white">F</a></td>
+		<td id="td702"><a href="#" class="pawn white">F</a></td>
+		<td id="td703"><a href="#" class="pawn white">F</a></td>
+		<td id="td704"><a href="#" class="pawn white">F</a></td>
+		<td id="td705"><a href="#" class="pawn white">F</a></td>
+		<td id="td706"><a href="#" class="pawn white">F</a></td>
+		<td id="td707"><a href="#" class="pawn white">F</a></td>
+		<td id="td708"><a href="#" class="pawn white">F</a></td>
 	</tr>
 	<tr id="tr8">
-		<td id="td801"><a href="#" class="rook white">&#9814;</a></td>
-		<td id="td802"><a href="#" class="knight white">&#9816;</a></td>
-		<td id="td803"><a href="#" class="bishop white">&#9815;</a></td>
-		<td id="td804"><a href="#" class="queen white">&#9813;</a></td>
-		<td id="td805"><a href="#" class="king white">&#9812;</a></td>
-		<td id="td806"><a href="#" class="bishop white">&#9815;</a></td>
-		<td id="td807"><a href="#" class="knight white">&#9816;</a></td>
-		<td id="td808"><a href="#" class="rook white">&#9814;</a></td>
+		<td id="td801"><a href="#" class="rook white">E</a></td>
+		<td id="td802"><a href="#" class="knight white">D</a></td>
+		<td id="td803"><a href="#" class="bishop white">C</a></td>
+		<td id="td804"><a href="#" class="queen white">B</a></td>
+		<td id="td805"><a href="#" class="king white">A</a></td>
+		<td id="td806"><a href="#" class="bishop white">C</a></td>
+		<td id="td807"><a href="#" class="knight white">D</a></td>
+		<td id="td808"><a href="#" class="rook white">E</a></td>
 	</tr>	
 </table>
 <div class="data">
 	<h1>CHESS</h1>
-	<div id="turn"><span class="whiteTurn">&#9812; White Moves</span></div>
+	<div id="turn"><span class="whiteTurn"><span class='chess_pieces'>A</span>White Moves</span></div>
 	<div><a id="reset" href="#" class="reset" onclick="reset()">Reset</a></div>
 	<div><a id="resign" href="#" class="resign" onclick="resign()">Resign</a></div>
-	<div><a id="castling" href="#" class="castling" onclick="launchCastling()">&#9814;Castling</a></div>
+	<div><a id="castling" href="#" class="castling" onclick="launchCastling()"><span class='chess_pieces'>E</span>Castling</a></div>
 </div>
 <button id="hiddenButton" style="visibility:hidden"></button>
 <button id="hiddenButton2" style="visibility:hidden"></button>
